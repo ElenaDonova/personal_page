@@ -91,7 +91,7 @@ nav ul li a:hover {
 /* Главная секция */
 .home-section {
   background: linear-gradient(135deg, #1C1A1B 0%, #1C1A1B 100%);
-  background-image: url("/pic.jpg");
+  background-image: url("pic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
