@@ -1,0 +1,260 @@
+/* Основные настройки */
+:root {
+  --primary: #2C3E50;
+  --secondary: #E74C3C;
+  --accent: #3498DB;
+  --light: #ECF0F1;
+  --dark: #1A252F;
+  --text: #333333;
+  --text-light: #7F8C8D;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка */
+header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav ul li a {
+  color: var(--text);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--secondary);
+}
+
+/* Главная секция */
+.home-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.home-section h2 {
+  font-size: 1.8rem;
+  color: var(--secondary);
+  margin: 1.5rem 0;
+}
+
+.home-section span {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+/* Секции */
+section {
+  padding: 6rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--secondary);
+}
+
+/* Карточки ценностей */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card i {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+/* Процесс работы */
+.work-process {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.step {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Навыки */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skill h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.skill li {
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--primary);
+}
+
+.skill span {
+  display: block;
+  font-weight: normal;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+/* Метрики */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.metric {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+/* Контакты */
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.contact-info p {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+  
+  .home-section h1 {
+font-size: 2.2rem;
+  }
+  
+  .home-section h2 {
+    font-size: 1.5rem;
+  }
+}
